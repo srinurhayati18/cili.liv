@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/sytle.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <!-- Navbar start-->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Cili <span>.liv</span></a>
+
+        <div class="navbar-nav">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#menu">Product</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+
+    </nav>
+    <!-- Navbar end-->
+    <main>
+        <br><br><br><br><br>
+        <section id="checkout" class="checkout">
+            <h2>Checkout</h2>
+            <form action="/checkout" method="post">
+                <div class="form-group">
+                    <h3>Product</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="yin-and-yang" name="product[]" value="Yin and Yang">
+                            ~Yin and Yang~
+                            <span>IDR 199K</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="fallen-angel" name="product[]" value="Fallen Angel">
+                            ~Fallen Angel~
+                            <span>IDR 199K</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="casual-brown" name="product[]" value="Casual Brown">
+                            ~Casual Brown~
+                            <span>IDR 169K</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="fallen-angel-long" name="product[]" value="Fallen Angel Long">
+                            ~Fallen Angel Long~
+                            <span>IDR 269K</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form-group">
+                    <h3>Quantity</h3>
+                    <div class="form-row">
+                        <label for="yin-and-yang-qnt">Yin and Yang</label>
+                        <input type="number" id="yin-and-yang-qnt" name="quantity[0]" value="1" min="1" step="1">
+                    </div>
+                    <div class="form-row">
+                        <label for="fallen-angel-qnt">Fallen Angel</label>
+                        <input type="number" id="fallen-angel-qnt" name="quantity[1]" value="1" min="1" step="1">
+                    </div>
+                    <div class="form-row">
+                        <label for="casual-brown-qnt">Casual Brown</label>
+                        <input type="number" id="casual-brown-qnt" name="quantity[2]" value="1" min="1" step="1">
+                    </div>
+                    <div class="form-row">
+                        <label for="fallen-angel-long-qnt">Fallen Angel Long</label>
+                        <input type="number" id="fallen-angel-long-qnt" name="quantity[3]" value="1" min="1" step="1">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3>Payment Method</h3>
+                    <div class="radio">
+                        <input type="radio" id="cash" name="payment" value="cash">
+                        <label for="cash">Cash</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="transfer" name="payment" value="transfer">
+                        <label for="transfer">Transfer</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="online" name="payment" value="online">
+                        <label for="online">Online Payment (BNI, Mandiri, etc)</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Pay</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
